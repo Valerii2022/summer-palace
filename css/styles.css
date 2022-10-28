@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #616161;
+    --secondary-text-color: #000000;
+    --white-color: #ffffff;
+    --secondary-bg-color: #F9F7F7;
+    --title-color: #222222;
+    --accent-color: #D1A954;
+    --border-color: rgba(209, 169, 84, 0.9);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+
+    font-size: 14px;
+}
+
+.header {}
+
+.site-nav {}
+
+.nav-list {}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.2308;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+
+.current {
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #D1A954;
+
+    border: 1px solid var(--border-color)
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.menu {}
+
+.section {}
+
+.menu-list {}
+
+.menu-list-item {
+    background-color: var(--accent-color)
+}
+
+.menu-title {
+    font-size: 30px;
+    line-height: 1.2333;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+}
+
+.menu-subtitle {
+    line-height: 1.3571;
+    text-align: center;
+
+    color: var(--white-color);
+}
+
+.about {}
+
+.site-title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.4444;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+
+.logo-descr {
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 1.2222;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+
+.text-descr {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.3571;
+}
+
+.about-list {}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.375;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+
+.gallery {}
+
+.gallery-title {}
+
+.title {}
+
+.learn-more {}
+
+.learn-more-title {}
+
+.learn-more-link {}
+
+.form-section {}
+
+.form-title {}
+
+.address {}
+
+.address-list {}
+
+.footer {}
+
+.footer-img {}
+
+.footer-text {}
