@@ -1,3 +1,5 @@
+/* general styles */
+
 :root {
     --primary-color: #616161;
     --secondary-text-color: #000000;
@@ -14,20 +16,28 @@ body {
     color: var(--primary-color);
 
     font-size: 14px;
+    font-weight: 300;
 }
 
-.header {}
-
-.site-nav {}
-
-.nav-list {}
+.hidden {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
 
 .list {
     list-style: none;
 }
 
 .link {
-    font-weight: 300;
     font-size: 13px;
     line-height: 1.2308;
     letter-spacing: 0.05em;
@@ -52,9 +62,55 @@ body {
     color: var(--accent-color);
 }
 
+.section {}
+
+.title {
+    font-size: 36px;
+    line-height: 1.4444;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 1.375;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+
+.logo-descr {
+    font-size: 9px;
+    line-height: 1.2222;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+}
+
+.site-title {
+    font-size: 36px;
+    line-height: 1.4444;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+
+/* header */
+
+.header {}
+
+.site-nav {}
+
+.nav-list {}
+
+/* menu section */
+
 .menu {}
 
-.section {}
 
 .menu-list {}
 
@@ -78,69 +134,88 @@ body {
     color: var(--white-color);
 }
 
+/* about section */
+
 .about {}
 
-.site-title {
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 1.4444;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-
-    color: var(--title-color);
-}
-
-.logo-descr {
-    font-weight: 300;
-    font-size: 9px;
-    line-height: 1.2222;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: var(--secondary-text-color);
-}
 
 .text-descr {
-    font-weight: 300;
-    font-size: 14px;
     line-height: 1.3571;
 }
 
 .about-list {}
 
-.subtitle {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.375;
-    letter-spacing: 0.05em;
+/* gallery section */
+
+.gallery {}
+
+.gallery-title {
+    font-size: 24px;
+    line-height: 1.3333;
+    text-align: center;
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
 }
 
-.gallery {}
-
-.gallery-title {}
-
 .title {}
 
-.learn-more {}
+/* learn-more section */
 
-.learn-more-title {}
+.learn-more {
+    background: url('../images/more-min.jpg') no-repeat;
+}
 
-.learn-more-link {}
+.learn-more-title {
+    color: var(--white-color);
+}
+
+.learn-more-link {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+    background-color: var(--white-color);
+}
+
+/* form section */
 
 .form-section {}
 
-.form-title {}
+.form-title {
+    color: var(--secondary-text-color);
+}
 
 .address {}
 
 .address-list {}
 
+.address-link {
+    line-height: 1.3571;
+    text-decoration: none;
+
+    color: var(--secondary-text-color);
+}
+
+.map-link {
+    text-decoration: underline;
+}
+
+.office-link {
+    letter-spacing: -0.01em;
+    text-decoration: underline;
+}
+
+/* footer */
+
 .footer {}
 
 .footer-img {}
 
-.footer-text {}
+.footer-text {
+    line-height: 1.3571;
+
+    color: var(--secondary-text-color);
+}
