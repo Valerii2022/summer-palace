@@ -59,13 +59,14 @@ p {
 }
 
 .current {
+  border: 1px solid var(--accent-color);
+  padding: 7px 10px 7px 10px;
+
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.05em;
 
   color: #d1a954;
-
-  border: 1px solid var(--border-color);
 }
 
 .link:hover,
@@ -73,7 +74,8 @@ p {
   color: var(--accent-color);
 }
 
-.section {}
+.section {
+}
 
 .title {
   font-size: 36px;
@@ -138,7 +140,8 @@ p {
   align-items: center;
 }
 
-.site-nav {}
+.site-nav {
+}
 
 .nav-list {
   display: flex;
@@ -213,7 +216,12 @@ p {
 .about {
   padding-bottom: 90px;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 35%, rgba(196, 196, 196, 1) 35%, rgba(196, 196, 196, 1) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(196, 196, 196, 1) 35%,
+    rgba(196, 196, 196, 1) 100%
+  );
 }
 
 .about .site-title {
@@ -284,7 +292,7 @@ p {
   display: inline-block;
   width: 46px;
   height: 30px;
-  background: url(../images/interior.svg)center bottom no-repeat;
+  background: url(../images/interior.svg) center bottom no-repeat;
   margin-right: 20px;
 }
 
@@ -293,7 +301,7 @@ p {
   display: inline-block;
   width: 46px;
   height: 37px;
-  background: url(../images/technologies.svg)center bottom no-repeat;
+  background: url(../images/technologies.svg) center bottom no-repeat;
   margin-right: 20px;
 }
 
@@ -302,7 +310,7 @@ p {
   display: inline-block;
   width: 46px;
   height: 37px;
-  background: url(../images/equipment.svg)center bottom no-repeat;
+  background: url(../images/equipment.svg) center bottom no-repeat;
   margin-right: 20px;
 }
 
@@ -424,12 +432,27 @@ p {
   margin-bottom: 0;
 }
 
+.address .address-link {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.address .address-link:hover {
+  color: var(--accent-color);
+}
+
+.address .add-icon {
+  margin-right: 25px;
+  fill: currentColor;
+}
+
 .address-list {
   display: flex;
   gap: 30px;
 }
 
-.address-list>.item {
+.address-list > .item {
   width: 50%;
 }
 
@@ -483,8 +506,8 @@ p {
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
-  background-color: var(--accent-color)
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /*----------------------------------------------------- footer */
