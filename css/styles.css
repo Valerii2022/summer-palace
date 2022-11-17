@@ -49,6 +49,9 @@ p {
 }
 
 .link {
+  transition: color 250ms linear, background-color 250ms linear;
+  padding: 7px 10px 7px 10px;
+
   font-size: 13px;
   line-height: 1.2308;
   letter-spacing: 0.05em;
@@ -71,7 +74,8 @@ p {
 
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .section {
@@ -148,7 +152,7 @@ p {
 }
 
 .nav-list .item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 /*----------------------------------------------------- menu section */
@@ -182,6 +186,11 @@ p {
 }
 
 .list-item .item {
+  transform: translateY(0%);
+  transition: transform 250ms linear, opacity 250ms linear;
+  opacity: 1;
+  overflow: hidden;
+
   background: rgba(209, 169, 84, 0.9);
   padding: 20px 15px;
 }
@@ -189,6 +198,11 @@ p {
 .item .item-wrap {
   padding: 22px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.list-item:hover .item {
+  transform: translateY(100%);
+  opacity: 0;
 }
 
 .menu .title {
