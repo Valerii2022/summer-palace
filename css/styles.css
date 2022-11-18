@@ -79,8 +79,7 @@ p {
   background-color: var(--accent-color);
 }
 
-.section {
-}
+.section {}
 
 .title {
   font-size: 36px;
@@ -145,8 +144,7 @@ p {
   align-items: center;
 }
 
-.site-nav {
-}
+.site-nav {}
 
 .nav-list {
   display: flex;
@@ -264,12 +262,10 @@ p {
 .about {
   padding-bottom: 90px;
   text-align: center;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1) 35%,
-    rgba(196, 196, 196, 1) 35%,
-    rgba(196, 196, 196, 1) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 1) 35%,
+      rgba(196, 196, 196, 1) 35%,
+      rgba(196, 196, 196, 1) 100%);
 }
 
 .about .site-title {
@@ -422,6 +418,7 @@ p {
 }
 
 .learn-more .item {
+  transition: color 250ms linear, background-color 250ms linear;
   display: inline-block;
 
   font-size: 16px;
@@ -440,6 +437,12 @@ p {
 
 .learn-more-link .item:last-child {
   padding: 22px 46px;
+  border: none;
+}
+
+.learn-more .item:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /*----------------------------------------------------- form section */
@@ -500,7 +503,7 @@ p {
   gap: 30px;
 }
 
-.address-list > .item {
+.address-list>.item {
   width: 50%;
 }
 
@@ -614,16 +617,77 @@ p {
   align-items: center;
 }
 
-.footer-text .item:not(:last-child)::after {
+/* .footer-text .item:not(:last-child)::after {
   content: '';
   width: 10px;
   height: 1px;
   display: block;
   background-color: var(--secondary-text-color);
-}
+} */
 
 .social-link:hover,
 .social-link:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* -----------------------------------------------------------backdrop */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 112, 186, 0.8);
+
+  transition: opacity 250ms linear;
+}
+
+.modal {
+  transition: transform 250ms linear;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 500px;
+  height: 800px;
+
+  background-color: var(--white-color);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(180deg);
+}
+
+.modal-btn {
+  transition: color 250ms linear, border 250ms linear, background-color 250ms linear;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+
+  text-transform: uppercase;
+
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.modal-btn:hover {
+  border: 1px solid var(--accent-color);
+
   color: var(--white-color);
   background-color: var(--accent-color);
 }
