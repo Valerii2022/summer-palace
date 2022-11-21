@@ -655,7 +655,7 @@ p {
   left: 50%;
 
   width: 500px;
-  min-height: 800px;
+  min-height: 500px;
 
   background-color: var(--white-color);
 }
