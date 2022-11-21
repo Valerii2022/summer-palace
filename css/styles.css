@@ -230,15 +230,6 @@ p {
   color: var(--white-color);
 }
 
-.over-text {
-  font-size: 16px;
-  line-height: 1.36;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: var(--white-color);
-}
-
 .overlay {
   transition: transform 250ms linear, opacity 250ms linear;
   transform: translateY(-100%);
@@ -250,6 +241,17 @@ p {
   padding: 15px;
 
   background: rgba(209, 169, 84, 0.8);
+}
+
+.over-text {
+  overflow: scroll;
+
+  font-size: 16px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-color);
 }
 
 .list-item:hover .overlay {
@@ -652,7 +654,7 @@ p {
   left: 50%;
 
   width: 500px;
-  height: 800px;
+  min-height: 800px;
 
   background-color: var(--white-color);
 }
