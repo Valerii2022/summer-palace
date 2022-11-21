@@ -234,6 +234,7 @@ p {
   transition: transform 250ms linear, opacity 250ms linear;
   transform: translateY(-100%);
   opacity: 0;
+  overflow: auto;
 
   position: absolute;
   width: 100%;
@@ -244,7 +245,7 @@ p {
 }
 
 .over-text {
-  overflow: scroll;
+
 
   font-size: 16px;
   line-height: 1.36;
