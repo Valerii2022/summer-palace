@@ -276,10 +276,18 @@
               </li>
             </ul>
           </div>
-          <form class="form" action="#">
-            <input class="input" type="text" name="Name" placeholder="Ваше имя" tabindex="1" />
-            <input class="input" type="email" name="Mail" placeholder="Ваш e-mail" tabindex="2" />
-            <textarea class="textarea" name="Message" placeholder="Сообщение" tabindex="3"></textarea>
+          <form class="form" autocomplete="off">
+            <div class="input-wrap">
+              <label for="name"></label>
+              <input class="input" type="text" name="name" placeholder="Ваше имя" tabindex="1" required id="name"
+                minlength="3" />
+            </div>
+            <div class="input-wrap">
+              <label for="mail"></label>
+              <input class="input" type="email" name="mail" placeholder="Ваш e-mail" tabindex="2" required id="mail" />
+            </div>
+            <label for="feedback"></label>
+            <textarea class="textarea" name="Message" placeholder="Сообщение" tabindex="3" id="feedback"></textarea>
             <button class="button" type="submit">Отправить</button>
           </form>
         </div>
